@@ -6,8 +6,8 @@ public class JavaBasic {
     @Test
     public void javaBasic() {
         int a = 13;
-        int b = 10;
-        int c = sumDigits(13, 10);
+        int b = 11;
+        int c = sumDigits(13, 11);
         int d = sumDigits(a, b);
 
         System.out.println("Summ is : " + c);
