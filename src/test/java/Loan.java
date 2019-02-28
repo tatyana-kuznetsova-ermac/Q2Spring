@@ -5,7 +5,7 @@ public class Loan {
     @Test
     public void loan() {
 
-        double baseAmount = 650;
+        double baseAmount = 700;
 
         double amountToReturn = 620;
 
