@@ -13,6 +13,7 @@ public class ArticleTest {
     private final By ARTICLE_PAGE_TITLE = By.xpath(".//h1[contains(@class, d-inline)]");
     private final By COMMENT_COUNT = By.xpath(".//h1[contains(@class, 'text-red-ribbon')]");
     private final By COMMENT_PAGE_TITLE = By.xpath(".//h1[@class = 'article-title']/a");
+
     private WebDriver driver;
 
     @Test
@@ -60,15 +61,12 @@ public class ArticleTest {
 
         //Check title
         Assertions.assertEquals(homrPageTitle, commentPageTitle, "Wrong comment page title!");
-
-        // Close browser
-
     }
 
+    // Close browser
     @AfterEach
     public void closeBrowser() {
         driver.close();
-
     }
 
 }
